@@ -1,0 +1,38 @@
+<div class="text-center  justify-content-center row">
+
+    <div class="  bg-success mb-2" style="padding: 20px; max-width: 50rem;">
+          <div class=" mt-2 float-start col-md-5">
+            <img src="/img/img-s.jpg" class="img-fluid rounded-start" alt="images">
+            <button class="btn secondary-bg primary-text aw-me mt-4">Import</button>
+          </div>
+          <div class="col-md-6 float-end justify-content-center ">
+            
+                <div class="form-group mb-2 fs-5">
+                    <label for="Name" >Name</label>
+                    <input required type="text" name="name" value="<%= product.name %> " id="Name" class="form-control ">
+                </div>
+                <div class=" mb-2 form-group fs-5">
+                    <label for="markdown" >Category</label>
+                    <input required type="text" name="markdown" value="<%= product.markdown %>" class="form-control ">
+                </div>
+                <div class=" mb-2 form-group fs-5 ">
+                    <label for="description" >Description</label>
+                    <textarea required type="text" name="description"  id="description" class="form-control"><%= product.description %></textarea>
+                </div>
+
+                <div class=" mb-2 form-group fs-5 ">
+                    <label for="price" >price</label>
+                    <input required type="number" name="price" value="<%= product.price %>" id="price" class="form-control ">
+                </div>
+                
+                
+                <div class="mt-4 fs-5">
+                    <a href="/product/all-product" style="min-width: 80px;" class="btn btn-danger aw-me">Cancel</a>
+                    <button type="submit" style="min-width: 80px;" class="btn btn-primary aw-me">save</button>
+                </div>
+                
+          
+        </div>
+      </div> 
+    
+</div>
